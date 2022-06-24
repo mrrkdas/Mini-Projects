@@ -67,22 +67,35 @@ public class Banking {
                             System.out.println("Sorry, you will have to do this process again if something is wrong");
                         }
 
-
-
-
                     } else {
                         System.out.println("Your passwords are not the same, you will have to do this process again. Sorry!!");
                     }
-
-
-
 
                 } else {
                     System.out.println("We currently don't serve bank accounts for minors, sorry");
                 }
                 break;
+
             case "b" : 
                 System.out.println("\nGreat, lets get started with the withdrawal process!!"); 
+                System.out.println("Enter your username: ");
+                String username = scan.nextLine();
+
+                System.out.println("Enter your password: ");
+                String password = scan.nextLine();
+
+                System.out.println("Great, how much would you like go withdraw? ");
+                int withdrawalAmount = scan.nextInt();
+
+                if (withdrawalAmount <= 10000) {
+                    System.out.println("Great, here is your money please print your full name here to varify");
+                    scan.nextLine();
+                    String name = scan.nextLine();
+
+                    System.out.println("Great, have a nice day, pleasure having buiness with you.");
+                } else {
+                    System.out.println("We don't give withdrawal amounts that are greater than 10000 due to security reasons. Sorry!!");
+                }
                 break;
             case "c" : 
                 System.out.println("\nGreat, lets get started with the depositing process!!");
