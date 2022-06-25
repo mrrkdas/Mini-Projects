@@ -114,6 +114,7 @@ public class Banking {
                 } else {
                     System.out.println("It is suspicous that you are depositing so much, sorry we can't do that!!");
                 }
+            default : System.out.println("Invalid response");
         }
 
 
