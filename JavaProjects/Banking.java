@@ -99,6 +99,21 @@ public class Banking {
                 break;
             case "c" : 
                 System.out.println("\nGreat, lets get started with the depositing process!!");
+
+                System.out.println("\nEnter your username; ");
+                String depositUsername = scan.nextLine();
+
+                System.out.println("Enter your password: ");
+                String depositPassword = scan.nextLine();
+
+                System.out.println("\nGreat how much would you like to deposit? ");
+                int depositAmount = scan.nextInt();
+
+                if (depositAmount < 10000) {
+                    System.out.println("Great, " + depositAmount + "has beem deposited into your account");
+                } else {
+                    System.out.println("It is suspicous that you are depositing so much, sorry we can't do that!!");
+                }
         }
 
 
