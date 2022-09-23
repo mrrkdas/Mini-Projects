@@ -1,12 +1,17 @@
-import weka.core.converters.ConverterUtils.DataSource;
+import weka.core.Instances;
+import weka.experiment.InstanceQuery;
 
-public class Test {
-    public static void main(String[] args) {
-        try {
-            DataSource source = new DataSource("");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+// public class Test {
+//     public static void main(String[] args) throws Exception {
+//         DataSource source = new DataSource("/Users/rish/Desktop/Mini-Projects/JavaProjects/heartdiseasedataset.csv");
+//         Instances data = source.getDataSet();
 
-}
+//         if (data.classIndex() == -1) {
+//             data.setClassIndex(data.numAttributes() - 1);
+//         }
+       
+
+        
+//     }
+
+// }
