@@ -1,0 +1,26 @@
+package org.firstinspires.ftc.teamcode;
+
+import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
+
+@Autonomous(name = "autoMode")
+
+public class DualDrive extends LinearOpMode {
+  private DcMotor rightmotor;
+  private DcMotor leftmotor;
+
+  @Override
+  public void runOpMode() {
+
+        rightmotor = hardwareMap.get(DcMotor.class, "rightmotor"); // Change motor names
+        leftmotor = hardwareMap.get(DcMotor.class, "leftmotor"); // Change motor names
+        
+        waitForStart();
+
+        while (opModeIsActive()) {
+
+        }
+    }
+}
